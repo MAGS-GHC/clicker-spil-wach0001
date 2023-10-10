@@ -1,6 +1,12 @@
 let banan = 0 
+let købtMonkey = false
+let antalMonkey = 0
+
 function minFunktion() {
     banan += 1 
+    if (købtMonkey){
+        banan += antalMonkey
+    }
     if(banan === 1) {
         document.getElementById("demo").innerHTML = banan + ' banan' ;
     }
@@ -10,16 +16,25 @@ function minFunktion() {
 
   }
   
-  let monkeycost = 20 
-  let monkey = 0 
+  let monkeycost = 10 
+  let monkey = 0
+ 
+
 
   function buyMonkey () {
     if (banan >= monkeycost) {
         banan = banan - monkeycost
-        document.getElementById("demo").innerHTML = banan + ' bananer'
+        købtMonkey = true
+        antalMonkey++
+        document.getElementById("demo").innerHTML = banan + ' aber'
     }
 
-    //husk monkeypic 
+
   }
+
+
+  
+
+
 
  
