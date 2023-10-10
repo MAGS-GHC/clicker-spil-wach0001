@@ -26,7 +26,7 @@ function minFunktion() {
         banan = banan - monkeycost
         købtMonkey = true
         antalMonkey++
-        document.getElementById("demo").innerHTML = banan + ' aber'
+        document.getElementById("demo").innerHTML = banan + ' bananer'
     }
 
 
