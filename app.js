@@ -17,9 +17,11 @@ function minFunktion() {
   }
   
   let monkeycost = 10 
-  let monkey = 0
-  
- 
+  let bananIsekundet = 0
+  let banansamlerPris = 80
+  let antalKøbtemonkey = 0
+  let antalBS = 0
+
 
 
   function buyMonkey () {
@@ -28,19 +30,36 @@ function minFunktion() {
         købtMonkey = true
         antalMonkey++
         monkeycost += 10
+        
         document.getElementById("demo").innerHTML = banan + ' bananer'
+        document.getElementById("antal").innerHTML = antalMonkey + ' købte aber'
         document.getElementById("abe pris").innerHTML = 'abepris :' + monkeycost 
     } else {
-        alert('Your are running low on bananas, get more to upgrade me')
+        alert('Du har ikke nok bananer, saml flere for at opgradere')
     
     }
 
 
+
+
   }
 
-
+function bananSamler() {
+    if(banan >= banansamlerPris) {
+        banan = banan - banansamlerPris
+        bananIsekundet += 1
+        antalBS++
+        banansamlerPris *= 2
+        document.getElementById("antalb").innerHTML = antalBS + ' købte Banan Mænd'
+        document.getElementById("BananSamleren").innerHTML = 'prisen på Banan Manden :' + banansamlerPris 
+    }
+}
   
 
+setInterval(function(){
+    banan += bananIsekundet
+    document.getElementById("demo").innerHTML = banan + ' bananer'
+}, 1000)
 
 
- 
+
