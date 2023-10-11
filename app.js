@@ -18,6 +18,7 @@ function minFunktion() {
   
   let monkeycost = 10 
   let monkey = 0
+  
  
 
 
@@ -26,7 +27,12 @@ function minFunktion() {
         banan = banan - monkeycost
         købtMonkey = true
         antalMonkey++
+        monkeycost += 10
         document.getElementById("demo").innerHTML = banan + ' bananer'
+        document.getElementById("abe pris").innerHTML = 'abepris :' + monkeycost 
+    } else {
+        alert('Your are running low on bananas, get more to upgrade me')
+    
     }
 
 
