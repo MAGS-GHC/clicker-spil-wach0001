@@ -19,7 +19,7 @@ function minFunktion() {
   let monkeyCost = 10 
   let bananIsekundet = 0
   let banansamlerPris = 80
-  let antalKøbtemonkey = 0
+ 
   let antalBS = 0
   let købtBS = false
 
