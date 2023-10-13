@@ -18,7 +18,7 @@ function minFunktion() {
   
   let monkeyCost = 10 
   let bananIsekundet = 0
-  let banansamlerPris = 80
+  let banansamlerPris = 20
  
   let antalBS = 0
   let købtBS = false
@@ -110,7 +110,6 @@ function highscore() {
     
 document.getElementById("high_s").innerHTML = 'nuværende score: ' + antalBanan + ' bananpoint'
 }
-
 
 
 
